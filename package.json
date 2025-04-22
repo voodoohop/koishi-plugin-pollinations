@@ -1,0 +1,65 @@
+{
+  "name": "koishi-plugin-pollinations",
+  "description": "Pollinations.AI integration for Koishi - Generate images and text without API keys",
+  "version": "1.0.0",
+  "main": "lib/index.js",
+  "typings": "lib/index.d.ts",
+  "files": [
+    "lib",
+    "src"
+  ],
+  "author": "Pollinations.AI <info@pollinations.ai>",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc",
+    "lint": "eslint src --ext .ts",
+    "test": "mocha -r esbuild-register tests/*.spec.ts",
+    "prepare": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/voodoohop/koishi-plugin-pollinations.git"
+  },
+  "bugs": {
+    "url": "https://github.com/voodoohop/koishi-plugin-pollinations/issues"
+  },
+  "homepage": "https://pollinations.ai",
+  "keywords": [
+    "bot",
+    "chatbot",
+    "koishi",
+    "plugin",
+    "pollinations",
+    "ai",
+    "image",
+    "text",
+    "generation"
+  ],
+  "koishi": {
+    "browser": true,
+    "category": "ai",
+    "description": {
+      "en": "Generate images and text with Pollinations.AI - No API keys required",
+      "zh": "使用 Pollinations.AI 生成图像和文本 - 无需 API 密钥"
+    },
+    "locales": [
+      "zh",
+      "en"
+    ]
+  },
+  "peerDependencies": {
+    "koishi": "^4.18.7"
+  },
+  "devDependencies": {
+    "@koishijs/eslint-config": "^1.0.4",
+    "@koishijs/plugin-mock": "^2.6.6",
+    "@types/mocha": "^10.0.6",
+    "@types/node": "^20.11.30",
+    "esbuild": "^0.20.2",
+    "esbuild-register": "^3.5.0",
+    "eslint": "^8.57.0",
+    "koishi": "^4.18.7",
+    "mocha": "^10.3.0",
+    "typescript": "^5.4.3"
+  }
+}
